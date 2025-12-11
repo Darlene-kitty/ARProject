@@ -29,8 +29,8 @@ declare module '@reactvision/react-viro' {
     children?: React.ReactNode;
   }
 
-  export class ViroScene extends Component<ViroSceneProps> {}
-  export class ViroText extends Component<ViroTextProps> {}
-  export class ViroAmbientLight extends Component<ViroAmbientLightProps> {}
-  export default class ViroARSceneNavigator extends Component<ViroARSceneNavigatorProps> {}
+  export class ViroScene extends Component<ViroSceneProps> { }
+  export class ViroText extends Component<ViroTextProps> { }
+  export class ViroAmbientLight extends Component<ViroAmbientLightProps> { }
+  export default class ViroARSceneNavigator extends Component<ViroARSceneNavigatorProps> { }
 }

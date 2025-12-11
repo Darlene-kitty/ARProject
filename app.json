@@ -38,10 +38,12 @@
         }
       ],
       [
-        "@reactvision/react-viro",
+        "@viro-community/react-viro",
         {
           "android": {
-            "xRMode": ["AR"]
+            "xRMode": [
+              "AR"
+            ]
           }
         }
       ]

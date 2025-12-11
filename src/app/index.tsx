@@ -1,5 +1,6 @@
 import { useRouter } from "expo-router";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import MembersList from "../components/MembersList";
 
 export default function Index() {
   const router = useRouter();
@@ -8,12 +9,15 @@ export default function Index() {
     <View style={styles.container}>
       <Text style={styles.title}>Hello World AR</Text>
       <Text style={styles.subtitle}>Bienvenue en ISI4</Text>
-      
-      <TouchableOpacity 
+      <Text style={styles.groupText}>Groupe X</Text>
+
+      <MembersList />
+
+      <TouchableOpacity
         style={styles.button}
         onPress={() => router.push("/ar")}
       >
-        <Text style={styles.buttonText}>Lancer l'expérience AR</Text>
+        <Text style={styles.buttonText}> Lancer l'expérience AR</Text>
       </TouchableOpacity>
     </View>
   );
@@ -35,14 +39,21 @@ const styles = StyleSheet.create({
   },
   subtitle: {
     fontSize: 18,
-    marginBottom: 40,
+    marginBottom: 5,
     color: "#666",
+  },
+  groupText: {
+    fontSize: 20,
+    fontWeight: "600",
+    marginBottom: 20,
+    color: "#007AFF",
   },
   button: {
     backgroundColor: "#007AFF",
     paddingHorizontal: 30,
     paddingVertical: 15,
     borderRadius: 10,
+    marginTop: 20,
   },
   buttonText: {
     color: "#fff",
